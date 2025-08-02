@@ -1,7 +1,8 @@
-flask==2.3.3
-tensorflow==2.10.1
+Flask==2.3.3
 numpy
 opencv-python
+
+
 
 
 
