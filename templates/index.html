@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Emotion Detection Live</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #0f2027;
+            background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+            color: #fff;
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #00e6e6;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+        }
+
+        #video-frame {
+            width: 720px;
+            height: auto;
+            border: 6px solid #00e6e6;
+            border-radius: 10px;
+            box-shadow: 0 0 30px #00e6e6;
+        }
+    </style>
+</head>
+<body>
+    <h1>Real-Time Emotion Detector 😄😢😡</h1>
+    <p>Please allow camera access to see the magic!</p>
+    <img id="video-frame" src="{{ url_for('video_feed') }}" alt="Live Video Feed">
+    <p style="margin-top: 20px;">🔥 Watch your face light up with emotion recognition powered by AI 🔥</p>
+</body>
+</html>
+ 
